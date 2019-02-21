@@ -2,23 +2,22 @@
 
 int main()
 {
-    int n,k,a[50],i,j,temp;
-    scanf("%d",&n);
-    scanf("%d",&k);
-    for(i=0;i<n;i++)
+    int n,k,i,c;
+    scanf("%d%d",&n,&k);
+    if(n>k)
     {
-        scanf("%d",&a[i]);
+        c=n;
     }
-   for(i=0;i<k;i++)
-   {
-      temp=a[i];
-      a[i]=a[i+1];
-      a[i+1]=temp;
-   }
-   
-for(i=0;i<n;i++)
-{
-    printf("%d",a[i]);
-}
+    else
+    {
+        c=k;
+    }
+    for(i=c;i>=2;i--)
+    {
+        if(n%i==0 && k%i==0)
+        {
+            printf("%d",i);
+        }
+    }
     return 0;
 }
