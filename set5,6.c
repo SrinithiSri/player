@@ -7,6 +7,6 @@ int main()
 	float result;
 	scanf("%d",&num);
 	result=sin(n*pi/180);
-	printf("%.1f",result
+	printf("%.1f",result);
 	return 0;
 }
