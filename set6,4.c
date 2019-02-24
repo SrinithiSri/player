@@ -32,9 +32,6 @@ int main()
             printf("no");
         }
     }
-    else
-    {
-        printf("no");
-    }
+    
     return 0;
 } 
