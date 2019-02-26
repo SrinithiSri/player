@@ -10,7 +10,7 @@ int main()
 {
     struct anagram s[100];
     char k[6]="kabali";
-    int i,j,l,n,c=0,v=0,f;
+    int i,j,l,n,c=0,v=0,d;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -22,13 +22,13 @@ int main()
         c=0;
         for(j=0;j<6;j++)
         {
-            for(f=0;f<l;f++)
+            for(d=0;d<l;d++)
            
         {
-            if(k[j]==s[i].a[f])
+            if(k[j]==s[i].a[d])
             {
                 c++;
-                s[i].a[f]='\0';
+                s[i].a[d]='\0';
                 break;
             }
         }
