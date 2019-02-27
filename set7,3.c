@@ -3,8 +3,6 @@ int main()
 {
     int n,i,j,a[100],b[100];
     scanf("%d",&n);
-    if(1<=n<=100000)
-    {
         for(i=0;i<n;i++)
         {
             scanf("%d",&a[i]);
@@ -24,6 +22,5 @@ int main()
                 }
             }
         }
-    }
     return 0;
 }
