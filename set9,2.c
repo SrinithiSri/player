@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,a[100],i,j,max=0,temp;
+    int n,a[100],i,j,temp;
     scanf("%d",&n);
     if(n<=100000)
     {
@@ -9,22 +9,15 @@ int main()
         {
             scanf("%d",&a[i]);
         }
-        for(i=0;i<n;i++ )
-        {
-            for(j=0;j<n;j++)
-            {
-                temp=(a[i]|a[j]);
-                if(temp>max)
-                {
-                    max=temp;
-                }
-                
-            }
+       temp=a[0];
+       for(i=0;i<n-1;i++)
+       {
+           temp=(temp&a[i+1]);
+       }
     
-        }
-        printf("%d",max);
-        
+       
     }
+    printf("%d",temp);
 
     return 0;
 }
