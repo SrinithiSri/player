@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    long int n,a[100],i=0,k,p,t,s,c=1,rem;
+    long int n,a[100],i=0,k,p,t,s,c=1,rem,j;
     scanf("%ld %ld %ld",&n,&k,&p);
     t=n;
     while(t>0)
